@@ -10,7 +10,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -65,9 +67,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private boolean validateUser(String email, String password) {
         SQLiteDatabase db = databaseHelper.getReadableDatabase();
-        Cursor cursor = db.rawQuery("SELECT * FROM users WHERE email=? AND password=?", new String[]{email, hashPassword(password)});
-
-        android.util.Log.d("LoginActivity", "Nombre d'utilisateurs trouvés : " + cursor.getCount());
+        String hashedPassword = hashPassword(password);
+        Cursor cursor = db.rawQuery("SELECT * FROM users WHERE email=? AND password=?", new String[]{email, hashedPassword});
 
         boolean isValid = cursor.getCount() > 0;
         cursor.close();

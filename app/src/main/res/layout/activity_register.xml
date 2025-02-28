@@ -1,57 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="20dp">
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/imageViewLogo"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/ic_launcher_foreground"
+        android:contentDescription="@string/logo_desc" />
 
     <EditText
         android:id="@+id/editTextNom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nom" />
+        android:minHeight="48dp"
+        android:hint="@string/hint_nom"
+        android:inputType="textPersonName"
+        android:autofillHints="name" />
 
     <EditText
         android:id="@+id/editTextPrenom"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Prénom" />
+        android:minHeight="48dp"
+        android:hint="@string/hint_prenom"
+        android:inputType="textPersonName"
+        android:autofillHints="given-name" />
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"
+        android:minHeight="48dp"
+        android:hint="@string/hint_email"
         android:inputType="textEmailAddress"
+        android:autofillHints="emailAddress"
         android:textColor="@color/black"
-        android:backgroundTint="@color/white"
-        />
+        android:backgroundTint="@color/white" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Mot de passe"
-        android:inputType="textPassword" />
+        android:minHeight="48dp"
+        android:hint="@string/hint_password"
+        android:inputType="textPassword"
+        android:autofillHints="password" />
 
     <EditText
         android:id="@+id/editTextConfirmPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Confirmer le mot de passe"
-        android:inputType="textPassword" />
+        android:minHeight="48dp"
+        android:hint="@string/hint_confirm_password"
+        android:inputType="textPassword"
+        android:autofillHints="password" />
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="S'inscrire" />
+        android:text="@string/button_register" />
+
 </LinearLayout>

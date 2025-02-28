@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">OujdaShop</string>
+    <string name="logo_desc">Logo de l\'application</string>
+    <string name="hint_nom">Nom</string>
+    <string name="hint_prenom">Prénom</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Mot de passe</string>
+    <string name="hint_confirm_password">Confirmer le mot de passe</string>
+    <string name="button_register">S\'inscrire</string>
 </resources>
