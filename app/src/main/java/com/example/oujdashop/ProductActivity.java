@@ -51,13 +51,11 @@ public class ProductActivity extends AppCompatActivity {
     }
 
     private void loadProducts() {
-        // Add dummy products (you should query these from your database)
-        productList.add(new Product(1, "Produit 1", 25.99, "Description du produit 1", "Catégorie 1", R.drawable.produit1));
-        productList.add(new Product(2, "Produit 2", 15.49, "Description du produit 2", "Catégorie 2", R.drawable.produit2));
-        productList.add(new Product(3, "Produit 3", 19.99, "Description du produit 3", "Catégorie 3", R.drawable.produit3));
-        productList.add(new Product(4, "Produit 4", 35.00, "Description du produit 4", "Catégorie 4", R.drawable.produit4));
+        productList.add(new Product(1, "Produit 1", "Description du produit 1", 25.99, R.drawable.produit1, "Catégorie 1"));
+        productList.add(new Product(2, "Produit 2", "Description du produit 2", 15.49, R.drawable.produit2, "Catégorie 2"));
+        productList.add(new Product(3, "Produit 3", "Description du produit 3", 19.99, R.drawable.produit3, "Catégorie 3"));
+        productList.add(new Product(4, "Produit 4", "Description du produit 4", 35.00, R.drawable.produit4, "Catégorie 4"));
     }
-
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);

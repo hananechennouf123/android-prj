@@ -1,13 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="@color/white">
 
+    <!-- Bouton pour aller à la page des produits -->
+    <Button
+        android:id="@+id/productButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voir les Produits"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:backgroundTint="#FFB6C1"
+        android:textColor="@color/white"
+        android:layout_marginBottom="20dp" />
 
-    <ListView
-        android:id="@+id/category_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <!-- Bouton pour aller au panier -->
+    <Button
+        android:id="@+id/cartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voir le Panier"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:backgroundTint="#FFB6C1"
+        android:textColor="@color/white" />
 
 </LinearLayout>
