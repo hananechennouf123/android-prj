@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="20dp"
-    android:background="@color/white">
+    android:background="@android:color/white">
 
     <!-- Logo -->
     <ImageView
@@ -25,7 +25,8 @@
         android:inputType="textEmailAddress"
         android:padding="12dp"
         android:background="@android:drawable/editbox_background"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="15dp"
+        android:textColor="@android:color/black" />
 
     <!-- Champ Mot de Passe -->
     <EditText
@@ -36,26 +37,33 @@
         android:inputType="textPassword"
         android:padding="12dp"
         android:background="@android:drawable/editbox_background"
-        android:layout_marginBottom="20dp"/>
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/black" />
 
     <!-- Bouton Connexion -->
     <Button
         android:id="@+id/buttonLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Connexion"
+        android:text="Se connecter"
         android:textColor="@android:color/white"
-
+        android:background="@android:color/holo_blue_dark"
         android:padding="12dp"
         android:layout_marginBottom="15dp"/>
 
     <!-- Lien vers Inscription -->
-    <TextView
+    <Button
         android:id="@+id/textViewRegister"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Créer un compte"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="16sp"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center" />
+
 </LinearLayout>
+
+
+
+
